@@ -1,0 +1,13 @@
+<center>
+	<img src="./img/property.png">
+</center>
+<div class="list1" ng-controller="HomeCtrl">
+	<form novalidate name="form">
+	<label class="item item-input item-stacked-label">
+    	<span class="input-label">Phone-No</span>
+    	<input class ="email" type="text"  ng-model="user" data-phone placeholder="+91857546832" novalidate/>
+    	 <span ng-show="form.phone.$error.phoneField">Please enter a valid phone number.</span>  
+  	</label>
+		<button class="button button-block button-positive" ng-controller="HomeCtrl" ng-click='login(user)'> Login</button>
+	</form>   
+</div>

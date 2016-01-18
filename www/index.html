@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src *">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Property-App</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+   
+    <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <!-- your app's js -->
+    <script src="js/parse-1.6.14.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="templates/home/home.js"></script>
+    <script src="templates/home/home-otp.js"></script> 
+    <script src="templates/dashboard/dashboard.js"></script>  
+    </head>
+    <body ng-app="PropertyApp">
+     <div class="bar bar-header bar-dark">
+          <h1 class="title">Property-App</h1>
+     </div>
+    <ion-nav-view ng-controller="HomeCtrl"></ion-nav-view>
+    </body>
+</html>

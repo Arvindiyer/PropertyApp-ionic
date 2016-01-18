@@ -1,0 +1,20 @@
+<ion-content>
+<center>
+  <img src="./img/property.png">
+  <h3>Rent Feeds</h3>
+</center>
+<ion-list ng-controller="DashboardCtrl as dataCtrl"can-swipe="listCanSwipe">
+<div class="list card" ng-repeat="rents in dataCtrl.rents.place">
+  <div class="item item-avatar">
+    <img class="cardimg" src="img/property.png"/>
+    <h2>{{rents.name}}</h2>
+    <p>{{rents.label}}</p>
+  </div>
+  <div class="item item-body" >                    
+    <p>{{rents.description}}</p>
+    <p>{{rents.price}}</p>
+    </p>
+  </div>
+</div>
+<ion-list>
+</ion-content>
